@@ -1,0 +1,2 @@
+Code uses functions and events to handle user requests and responses for rides.
+The solution will involve breaking down the matching algorithm into smaller functions that can be executed separately and asynchronously, improving the performance and scalability of the system. Events will be used to trigger specific functions in response to user actions, such as requesting a ride or canceling a ride.
