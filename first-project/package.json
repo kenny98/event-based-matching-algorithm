@@ -1,12 +1,17 @@
 {
-  "name": "",
+  "name": "ride-request-distributed",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "func start",
+    "start:host": "func start",
+    "start-frontend": "cd user-frontend && http-server -o --cors",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "^2.6.9",
+    "request": "^2.88.2",
+    "xhr2": "^0.2.1"
+  },
   "devDependencies": {
     "azure-functions-core-tools": "^4.x"
   }
