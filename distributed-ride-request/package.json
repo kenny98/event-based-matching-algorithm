@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "durable-functions": "^2.1.2",
+    "haversine-distance": "^1.2.1",
     "request": "^2.88.2"
   }
 }

@@ -124,14 +124,15 @@ module.exports = async function (context) {
     }
 ]
   filtered_drivers = []
-  console.log(context.bindings.name);
+
   for (i in drivers) {
     for (j in context.bindings.name) {
       if (drivers[i]._id == context.bindings.name[j]) {
-        filtered_drivers.push(drivers[i]); // Only return drivers where ID matched
+        filtered_drivers.push(drivers[i]); // Only return drivers where ID matched, calculate haversine for these drivers
       }
     }
   }
+
   // Return drivers with enough car seating for number of riders
   return (filtered_drivers);
 };
