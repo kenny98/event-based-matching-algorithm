@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <title>Ride Request User Frontend</title>
+    </head>
+    <h1>Ride Request User Frontend</h1>
+    <body>
+        <button type="button" class="button" onclick="requestride()"><span class="button__text">Request a Ride</span></button>
+        <button type="button" class="button" onclick="requestride()"><span class="button__text">Cancel Ride</span></button>
+    </body>
+    <script>
+        function requestride(){
+            const btn = document.querySelector(".button");
+            btn.classList.add("button--loading");
+            const Http = new XMLHttpRequest();
+            const url = "http://localhost:7071/api/ride-request/?lat=200&lon=200";
+            Http.open("GET", url);
+            requestbody = {};
+            Http.send()
+            Http.onreadystatechange=(e)=>{
+                console.log(Http.responseText)
+            }
+            btn.classList.remove("button--loading");              
+        }
+    </script>
+</html>
