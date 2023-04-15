@@ -8,10 +8,7 @@ The solution will involve breaking down the matching algorithm into smaller func
 The code accepts a request 
 
 ## Installation
-1. After cloning or downloading project, navigate to distributed-ride-request folder
-```bash
-  cd distributed-ride-request
-```
+1. Clone or download repository
 
 2. Install any dependencies with npm
 
