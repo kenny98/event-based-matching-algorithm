@@ -29,5 +29,6 @@ The code accepts a request
   func start
 ```
 
-6. Postman or Curl can be used to send a GET or POST request to http://localhost:7071/api/orchestrators/DurableFunctionsOrchestratorJS1 once the functions are running
-    
+6. Postman or Curl can be used to send a GET or POST request to http://localhost:7071/api/orchestrators/DurableFunctionsOrchestratorJS1 once the functions are running, the parameters
+"lat", "lon" and "riders" needs to be passed in the request body for the code to calculate correctly.
+lat for latitude, lon for longitude and riders for the number of riders in the vehicle.
